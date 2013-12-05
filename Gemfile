@@ -32,7 +32,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+
 gem 'faker'
+
+
 # Seed data
 
 # Use ActiveModel has_secure_password
@@ -45,4 +48,4 @@ gem 'faker'
 # gem 'capistrano', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]
