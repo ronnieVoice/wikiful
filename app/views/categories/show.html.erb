@@ -1,0 +1,10 @@
+<h1> <%= @category.name %> Articles </h1>
+	<h3> There are <%= category.articles.count %> articles under <%= category.name %> </h3>
+		<ul>
+			<% categories.each do |category| %>
+			  <h3>
+			  	<%= link.to article.title, article %>
+			  </h3>
+			<% end %>
+
+		</ul>
