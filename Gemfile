@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
-# Use sqlite3 as the database for Active Record
 gem 'pg'
 
 # Use SCSS for stylesheets
@@ -32,14 +31,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-
-gem 'faker'
-
-
-# Seed data
-
 # Use ActiveModel has_secure_password
- gem 'bcrypt-ruby', '~> 3.0.1'
+gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -48,8 +41,12 @@ gem 'faker'
 # gem 'capistrano', group: :development
 
 # Use debugger
-gem 'debugger', group: [:development, :test]
+# gem 'debugger', group: [:development, :test]
+group :production do
+  gem 'rails_12factor'
+end
 
+gem 'faker'
 gem 'twitter-bootstrap-rails'
 gem 'less-rails'
 gem 'therubyracer'
