@@ -2,8 +2,7 @@ development:
   adapter: postgresql
   database: wikiful_development
   encoding: unicode
-  user: wikiful
-  host: localhost
+  
   pool: 5
   timeout: 5000
 
