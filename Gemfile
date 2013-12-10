@@ -42,9 +42,9 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-group :production do
-  gem 'rails_12factor'
-end
+
+gem 'rails_12factor'
+
 
 gem 'faker'
 gem 'twitter-bootstrap-rails'
